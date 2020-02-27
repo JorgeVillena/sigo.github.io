@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Geogrotesque-SemiBold';
+  src: url('Geogrotesque-SemiBold.eot?#iefix') format('embedded-opentype'),  url('Geogrotesque-SemiBold.otf')  format('opentype'),
+	     url('Geogrotesque-SemiBold.woff') format('woff'), url('Geogrotesque-SemiBold.ttf')  format('truetype'), url('Geogrotesque-SemiBold.svg#Geogrotesque-SemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

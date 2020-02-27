@@ -1,0 +1,339 @@
+@import "./variables";
+@include mat-core();
+
+/*
+ *=============================================
+ * TIPOGRAFÍA SUNEDU
+ *=============================================
+ */
+
+@font-face {
+  font-family: "Geogrotesque-Light";
+  src: url("./assets/fonts/Geogrotesque-Light/Geogrotesque-Light.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/Geogrotesque-Light/Geogrotesque-Light.otf") format("opentype"),
+    url("./assets/fonts/Geogrotesque-Light/Geogrotesque-Light.woff") format("woff"),
+    url("./assets/fonts/Geogrotesque-Light/Geogrotesque-Light.ttf") format("truetype"),
+    url("./assets/fonts/Geogrotesque-Light/Geogrotesque-Light.svg#Geogrotesque-Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geogrotesque-Regular";
+  src: url("./assets/fonts/Geogrotesque-Regular/Geogrotesque-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/Geogrotesque-Regular/Geogrotesque-Regular.otf") format("opentype"),
+    url("./assets/fonts/Geogrotesque-Regular/Geogrotesque-Regular.woff") format("woff"),
+    url("./assets/fonts/Geogrotesque-Regular/Geogrotesque-Regular.ttf") format("truetype"),
+    url("./assets/fonts/Geogrotesque-Regular/Geogrotesque-Regular.svg#Geogrotesque-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geogrotesque-Medium";
+  src: url("./assets/fonts/Geogrotesque-Medium/Geogrotesque-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/Geogrotesque-Medium/Geogrotesque-Medium.otf") format("opentype"),
+    url("./assets/fonts/Geogrotesque-Medium/Geogrotesque-Medium.woff") format("woff"),
+    url("./assets/fonts/Geogrotesque-Medium/Geogrotesque-Medium.ttf") format("truetype"),
+    url("./assets/fonts/Geogrotesque-Medium/Geogrotesque-Medium.svg#Geogrotesque-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geogrotesque-SemiBold";
+  src: url("./assets/fonts/Geogrotesque-SemiBold/Geogrotesque-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/Geogrotesque-SemiBold/Geogrotesque-SemiBold.otf") format("opentype"),
+    url("./assets/fonts/Geogrotesque-SemiBold/Geogrotesque-SemiBold.woff") format("woff"),
+    url("./assets/fonts/Geogrotesque-SemiBold/Geogrotesque-SemiBold.ttf") format("truetype"),
+    url("./assets/fonts/Geogrotesque-SemiBold/Geogrotesque-SemiBold.svg#Geogrotesque-SemiBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("./assets/fonts/OpenSans-SemiBold/OpenSans-SemiBold.eot");
+  src: url("./assets/fonts/OpenSans-SemiBold/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/OpenSans-SemiBold/OpenSans-SemiBold.woff2") format("woff2"),
+    url("./assets/fonts/OpenSans-SemiBold/OpenSans-SemiBold.woff") format("woff"),
+    url("./assets/fonts/OpenSans-SemiBold/OpenSans-SemiBold.ttf") format("truetype"),
+    url("./assets/fonts/OpenSans-SemiBold/OpenSans-SemiBold.svg#OpenSans-SemiBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("./assets/fonts/OpenSans-Regular/OpenSans-Regular.eot");
+  src: url("./assets/fonts/OpenSans-Regular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/OpenSans-Regular/OpenSans-Regular.woff2") format("woff2"),
+    url("./assets/fonts/OpenSans-Regular/OpenSans-Regular.woff") format("woff"),
+    url("./assets/fonts/OpenSans-Regular/OpenSans-Regular.ttf") format("truetype"),
+    url("./assets/fonts/OpenSans-Regular/OpenSans-Regular.svg#OpenSans-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("./assets/fonts/OpenSans-Light/OpenSans-Light.eot");
+  src: url("./assets/fonts/OpenSans-Light/OpenSans-Light.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/OpenSans-Light/OpenSans-Light.woff2") format("woff2"),
+    url("./assets/fonts/OpenSans-Light/OpenSans-Light.woff") format("woff"),
+    url("./assets/fonts/OpenSans-Light/OpenSans-Light.ttf") format("truetype"),
+    url("./assets/fonts/OpenSans-Light/OpenSans-Light.svg#OpenSans-Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+ *===============================================
+ * ESTILOS DE LOS FORM CONTROLS DE LA APLICACIÓN
+ *===============================================
+ */
+
+.mat-form-field {
+  input {
+    line-height: 5px;
+  }
+
+  .mat-form-field-infix {
+    border-top: 0px !important;
+  }
+
+  .mat-form-field-invalid .mat-form-field-flex {
+    border-color: #f44336 !important;
+
+    &:hover {
+      border-color: #f44336 !important;
+    }
+  }
+
+  .mat-form-field-flex {
+    background: #fff;
+    border: 1px solid #ced4da;
+    padding: 5px 10px;
+
+    &:hover {
+      border: 1px solid #1f4e79;
+    }
+  }
+
+  .mat-form-field-underline {
+    height: 0px !important;
+  }
+
+  .mat-form-field-ripple {
+    height: 0px !important;
+    display: none !important;
+  }
+
+  &.mat-form-field-disabled .mat-form-field-flex,
+  &.mat-form-field-select-disabled .mat-form-field-flex {
+    background: #f7f7f7 !important;
+    color: #7b7b7b !important;
+    padding-left: 10px !important;
+    border: none !important;
+    border-bottom: 1px dashed #b9b9b9 !important;
+    cursor: not-allowed !important;
+
+    .mat-input-element:disabled,
+    .mat-form-field-type-mat-native-select.mat-form-field-disabled .mat-form-field-infix::after {
+      color: #333333;
+      opacity: 0.6 !important;
+    }
+  }
+}
+
+.ng-select-multiple.mat-form-field .mat-form-field-infix {
+  padding-bottom: 0px;
+}
+
+.ng-select-multiple.mat-form-field .mat-form-field-flex {
+  min-height: 35px;
+}
+
+.ng-select-multiple.mat-form-field .mat-form-field-flex .ng-select {
+  margin-top: -5px !important;
+}
+
+/*
+ *===============================================
+ * ESTILOS DE TABS PARA LA APLICACION
+ *===============================================
+ */
+
+.mat-tab-header {
+  // border-bottom: solid 0px !important;
+}
+
+.mat-tab-list {
+  .mat-ink-bar {
+    visibility: hidden !important;
+  }
+}
+
+.mat-tab-label {
+  height: 35px !important;
+  opacity: 1 !important;
+  border-top: mat-color($candy-app-primary) solid 1px;
+  border-right: mat-color($candy-app-primary) solid 1px;
+  border-left: mat-color($candy-app-primary) solid 1px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-right: 2px;
+
+  .mat-tab-label-content {}
+
+  &.mat-tab-disabled {
+    opacity: 0.6 !important;
+  }
+}
+
+.mat-tab-label:not(.mat-tab-label-active) {
+  background: mat-color($candy-app-primary);
+
+  .mat-tab-label-content {
+    color: mat-contrast($candy-app-primary, morado);
+  }
+}
+
+.mat-tab-label.mat-tab-label-active {
+  .mat-tab-label-content {
+    color: mat-color($candy-app-primary);
+    font-weight: bold;
+  }
+}
+
+/*
+ *===============================================
+ * ESTILOS DE TABLAS PARA LA APLICACION
+ *===============================================
+ */
+
+@media (min-width: 769px) {
+  .mat-row {
+    height: 32px !important;
+  }
+}
+
+.mat-header-cell {
+  background: #1f4e79 !important;
+  color: #ffffff !important;
+}
+
+.mat-header-row {
+  height: 42px !important;
+}
+
+.mat-sort-header-arrow {
+  color: #ffffff !important;
+}
+
+/*
+ *===============================================
+ * ESTILOS DE MODALES PARA LA APLICACION
+ *===============================================
+ */
+/*
+.mat-dialog-content {
+  margin: 0 -18px !important;
+  padding: 0px 18px !important;
+}
+*/
+@media (min-width: 1400px) {
+  .mat-dialog-content {
+    max-height: 80vh !important;
+  }
+}
+
+.mat-dialog-actions {
+  padding: 12px 0 !important;
+}
+
+
+.app-title {
+  color: mat-color($candy-app-primary) !important;
+}
+
+.siu-button-blue button {
+  background: #024b82;
+  color: #fff;
+}
+
+/*
+ *===============================================
+ * ESTILOS DE SELECT PARA LA APLICACION
+ *===============================================
+ */
+
+.ng-select.select-sunedu {
+  border: 0px;
+
+  border-radius: 0;
+}
+
+.ng-select.select-sunedu .ng-select-container {
+  border-radius: 0;
+
+  &:hover {
+    border-color: mat-color($candy-app-primary);
+  }
+}
+
+.select-sunedu .ng-option {
+  white-space: inherit !important;
+
+  &.ng-option-marked {
+    background-color: #ccc9de !important;
+  }
+}
+
+.select-sunedu .ng-option.ng-option-selected {
+
+  background-color: #e6e4f0 !important;
+
+  .custom-control.custom-checkbox .form-check-label::before {
+    background-color: mat-color($candy-app-primary);
+  }
+}
+
+.ng-select.select-sunedu.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
+  background-color: #e6e4f0 !important;
+}
+
+.ng-select.ng-select-multiple .ng-clear-wrapper .ng-clear {
+  transform: rotate(-15deg);
+  margin-top: 2px;
+}
+
+.ng-select.ng-select-disabled .ng-select-container {
+  background: #f7f7f7 !important;
+  color: #7b7b7b !important;
+  padding-left: 10px !important;
+  border: none !important;
+  border-bottom: 1px dashed #b9b9b9 !important;
+  cursor: not-allowed !important;
+}
+
+.ng-select.ng-select-focused:not(.ng-select-opened)>.ng-select-container {
+  box-shadow: none;
+  border-color: mat-color($candy-app-primary);
+}
+
+.simple-table {
+  width: 100%;
+
+  th {
+    padding: 5px;
+  }
+
+  tr {
+    height: 20px;
+
+    td {
+      padding: 5px;
+    }
+  }
+}
